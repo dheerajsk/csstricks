@@ -2,6 +2,8 @@
 
 #product-overview {
 		background: url("freedom.jpg");
+		/* background-size: 100px; */
+		background-repeat: repeat-x;
 		width: 700px;
 		height: 528px;
 		padding: 10px;
@@ -15,7 +17,10 @@
 
 #product-overview h1 {
     color: white;
-    font-family: 'Anton', sans-serif;
+		font-family: 'Anton', sans-serif;
+		position: absolute;
+		bottom: 5%;
+		left: 3%;
 }
 
 .plan__list{
