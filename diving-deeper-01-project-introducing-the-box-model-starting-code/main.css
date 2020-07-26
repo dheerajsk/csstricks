@@ -1,13 +1,21 @@
 
 
 #product-overview {
-		background: url("freedom.jpg");
-		/* background-size: 100px; */
-		background-repeat: repeat-x;
-		width: 700px;
-		height: 528px;
-		padding: 10px;
-		
+		background: url("freedom.jpg") left 10% bottom 70%/cover no-repeat border-box;
+		/* background-image: linear-gradient(180deg, red, blue, orange, green,   yellow, black, white); */
+		/* background-image: radial-gradient(circle at top, red, green, yellow, blue, orange); */
+		/* background-size: cover;
+		background-position: left 10% top 20%; */
+		/* background-repeat: no-repeat; */
+		/* background-origin: border-box;
+		background-clip: border-box; */
+		/* background-attachment: fixed; */
+		/* border: 5px dashed red; */
+		width: 100vw;
+		height: 33vh;
+		padding: 0.75rem;
+		margin-top: 2rem;
+		position: relative;  
 }
 
 .section-title {
@@ -21,6 +29,7 @@
 		position: absolute;
 		bottom: 5%;
 		left: 3%;
+		width: 100%;
 }
 
 .plan__list{
@@ -32,8 +41,8 @@
 .plan{
 	background-color: #d5ffdc;
 	text-align: center;
-	padding: 16px;
-	margin: 8px;
+	padding: 1rem;
+	margin: 0.5rem;
 	display: inline-block;
 	width: 30%;
 	vertical-align: middle;
@@ -82,13 +91,13 @@
 
 #key-features{
 	background-color: #ff1b68;
-	margin-top: 80px;
-	padding: 16px;
+	margin-top: 4.25rem;
+	padding: 1rem;
 }
 
 #key-features .section-title{
 	color: white;
-	margin: 32px;
+	margin: 2rem;
 }
 
 .key-features__list{
@@ -117,7 +126,7 @@
 	text-align: center;
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.2rem;
 }
 
 /* h1 {
@@ -133,3 +142,52 @@
 	color: red;
 	font-size: 20px;
 } */
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
